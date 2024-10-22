@@ -1,32 +1,406 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>1</title>
-    <url>/posts/83dcefb7/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/posts/4a17b156/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>iels writing</title>
+    <url>/posts/64daf1d1/</url>
+    <content><![CDATA[<h1 id="writing"><a href="#writing" class="headerlink" title="writing"></a>writing</h1><h2 id="Task-1"><a href="#Task-1" class="headerlink" title="Task 1"></a>Task 1</h2><p>an introduction and two body paragraphs</p>
+<aside>
+💡 past tense
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+</aside>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<ul>
+<li><p>analyze the data and determine how to split the date into two(or three) logical parts.</p>
+</li>
+<li><p>writing the introduction, usually one sentence or two.</p>
+<ul>
+<li>the chart(graph, diagram, table) demonstrates that</li>
+<li>the first [   ] shows…..while the second shows……</li>
+</ul>
+<p>  describe the form of the data, the title and the axis 
+  </p>
+</li>
+<li><p>writing the body</p>
+<ul>
+<li><p>the opening sentence must describe the date that will be covered by the paragraph.</p>
+</li>
+<li><p>statements can be straight forward because the prompts provides information to support.</p>
+</li>
+<li><p>Highlight key points</p>
+<ul>
+<li>different adjectives indicate how a point is important.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>distinctive</th>
+<th>notable</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>main</td>
+<td>noticeable</td>
+</tr>
+<tr>
+<td>significant</td>
+<td>underlying</td>
+</tr>
+</tbody></table>
+<p>  one of the most significant change was</p>
+<p>  another noticeable trend was</p>
+<p>  there were only relatively small changes in
+  </p>
+</li>
+<li><p>Diagram</p>
+<p>  three paragraphs</p>
+<ul>
+<li>first map (past or now) - From the first map,<ul>
+<li>There was a main road named      running from the south to the north.</li>
+<li>Grange Park was opened in 1920, a rectangular area with access from Arnold Avenue on the north.</li>
+</ul>
+</li>
+<li>second map (now or future) - the  witnessed a huge alteration after the construction.<ul>
+<li>This area was empty before the rebuild, but now it has</li>
+<li>the      was modified to have a</li>
+</ul>
+</li>
+<li>summary - To sum up,<ul>
+<li>Despite the apparently significant changes, the park retains the basic elements of          , with the addition of    .</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Flow chart</p>
+  <aside>
+  💡 human agent - passive voice                 natural process - active voice
+  
+  </aside>
+  
+  <aside>
+  💡 synonym: procedure  step   phase   stage    process
+  
+  </aside>
+  
+<ul>
+<li><p>analyze the data and determine how to split the date into two(or three) logical parts.</p>
+</li>
+<li><p>first part</p>
+<ul>
+<li>the whole process begins when</li>
+<li>the next step is to</li>
+</ul>
+</li>
+<li><p>second part</p>
+<ul>
+<li>afterwards</li>
+<li>in the final stage of     ,</li>
+</ul>
+</li>
+<li><p>In summary</p>
+<ul>
+<li>there is a link between a and c</li>
+<li>It is noteworthy that the first two stage (common point), while the third stage is ( uncommon point)</li>
+</ul>
+<p>  use which when as v-ing and for removing repeat parts</p>
+</li>
+</ul>
+</li>
+<li><p>line graph</p>
+  <aside>
+  💡 past tense
+  
+  </aside>
+  
+  <aside>
+  💡 the amount of   the number of   the proportion of   the percentage of
+  
+  </aside>
+  
+<p>  make sure use the right units of measurement</p>
+<p>  before start writing, look carefully at how the axes of the graph are labeled.</p>
+<table>
+<thead>
+<tr>
+<th>rose</th>
+<th>steadily</th>
+<th>peaked</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>fell</td>
+<td>sharply</td>
+<td>fluctuated</td>
+</tr>
+<tr>
+<td>decreased</td>
+<td>gradually</td>
+<td>leveled off</td>
+</tr>
+<tr>
+<td>declined</td>
+<td>rapidly</td>
+<td>reached its lowest&#x2F; highest point</td>
+</tr>
+<tr>
+<td>increased</td>
+<td>moderately</td>
+<td>reach a peak</td>
+</tr>
+<tr>
+<td>plummeted</td>
+<td>slightly</td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>introduction - the line graph demonstrates the keyword in place name  between time and time : A, B and C. use : to introduce a list.</p>
+</li>
+<li><p>two body paragraphs</p>
+<ul>
+<li>sentence patterns<ul>
+<li>verb + adverb: meat consumption dipped slightly\</li>
+<li>there be + adjective + noun: there was a slight dip in meat consumption.</li>
+<li>time frame + main clause + specific figures: From. to. meat consumption dipped slightly from 15 kgs to 12 kgs.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>In summary</p>
+<p>  if the visual prompt contains two or more graphs, your summary should indicate the connection between them.</p>
+<p>  STATE the trends are broadly similar or different.</p>
+</li>
+</ul>
+</li>
+<li><p>bar graph &#x2F; pie chart</p>
+  <aside>
+  💡 past tense
+  
+  </aside>
+  
+<p>  describe and compare information</p>
+<table>
+<thead>
+<tr>
+<th>nearly half</th>
+<th>a small minority</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>three quarters</td>
+<td>just under a third</td>
+</tr>
+<tr>
+<td>the vast majority</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>  many much far significantly slightly nearly+ 比较级 + noun + than</p>
+<ul>
+<li>intro - the bar chart gives information about</li>
+<li>body paragraphs<ul>
+<li>(the same number) similar numbers of sth in A and in B</li>
+<li>…. in both A and B</li>
+<li>as much (many) as B</li>
+<li>whereas,</li>
+<li>in contrast,</li>
+</ul>
+</li>
+<li>In summary the figure shows</li>
+</ul>
+</li>
+<li><p>two figures</p>
+<p>  any obvious points, for example peaks and low points that help to illustrate the connection, should be highlighted.</p>
+<ul>
+<li><p>intro</p>
+<ul>
+<li><p>first sentence gives a description of what is shown in figure1.</p>
+</li>
+<li><p>second sentence gives a description of what is shown in figure2.</p>
+</li>
+<li><p>third sentence makes a statement about the relationship between 1 and 2.</p>
+<p>  the line graph shows      for sth at number-year intervals from time to time.</p>
+</li>
+</ul>
+</li>
+<li><p>body paragraphs - analyze the data and determine how to split the date into two(or three) logical parts.</p>
+<ul>
+<li><p>first body paragraphs - describe the overall relationship between a and b</p>
+</li>
+<li><p>second - describe the overall relationship between a and c</p>
+</li>
+<li><p>….</p>
+<p>  the … peaked in time then fell sharply until time. After a slight recovery in time. it remained relatively flat thereafter.</p>
+<p>  …..showed a similar pattern with ….</p>
+<p>  ….remained roughly constant. Not surprisingly, …… also remained relatively steady throughout the period.</p>
+<p>  when       rose.    ,       also appeared to ……</p>
+<p>  the more……, the more…….</p>
+<p>  …..showed a similar pattern.</p>
+<p>  when…..falls,     also.  </p>
+<p>  the less…. the more</p>
+</li>
+</ul>
+</li>
+<li><p>Overall</p>
+<ul>
+<li>overall, the figures suggest….. may be influenced by the…….</li>
+<li>…. appears to act as a stimulus to….., whereas …. may have the opposite effect.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Task-2"><a href="#Task-2" class="headerlink" title="Task 2"></a>Task 2</h2><p>  should focus on the underlying question. ideas presented must be logical.statements should be more moderate.</p>
+<p>  these are extreme views and a good answer is likely to include the possibility that adjustments on both sides should occur.</p>
+<ul>
+<li><p>analyzing the question</p>
+<p>   circle a key word that you might want to repeat and underline any words or expressions which could be replaced with synonyms.</p>
+<ul>
+<li>provide an explanation or prediction</li>
+<li>evaluate an idea or belief                                      evidence for &#x2F; evidence against**</li>
+<li>propose one or more solutions to a problem</li>
+<li>evaluate the solution.                                             what are possible solution?##</li>
+</ul>
+</li>
+<li><p>write a short plan</p>
+</li>
+<li><p>write a introduction</p>
+<ul>
+<li>state the topic and suggest a reason why the topic is important<ul>
+<li><p>first sentence - background</p>
+</li>
+<li><p>second sentence - to state a common position or belief</p>
+<ul>
+<li>still the vast majority of people opt for</li>
+<li>others believe that</li>
+<li>many people question whether ……</li>
+</ul>
+<p>  reporting verb: believe argue suspect insist say support question</p>
+<pre><code>                   agree with  acknowledge to disagree with   doubt on 
+</code></pre>
+</li>
+<li><p>final sentence - a thesis statement</p>
+<ul>
+<li>in fact, there are a number of reason for believing that.  **</li>
+<li>people are beginning to ask whether more can be done to reverse this trend. &#x2F; to solve xxx problem.##</li>
+<li>in this essay.      will be discussed.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>write the body</p>
+<ul>
+<li><p>opening sentence - topic sentence</p>
+<p>  each topic sentence usually advances the main idea. repeating a key word or phrase from the thesis statement makes the connection between each point and the main topic.  </p>
+<ul>
+<li>first<ul>
+<li>the first reason is.       **</li>
+<li>one possible approach is ##</li>
+</ul>
+</li>
+<li>second<ul>
+<li>…… is another reason.**</li>
+<li>an alternative approach would be to do sth.## ( suggest recommend advocate urge</li>
+<li>one measure that.       could take is to……</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ideas sentences</p>
+<ul>
+<li>evidence for&#x2F; evidence against**</li>
+<li>positive consequences&#x2F; drawbacks<ul>
+<li>it would</li>
+<li>Doing this could</li>
+<li>…..would probably have a</li>
+<li>this could encourage……</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>example sentence</p>
+<ul>
+<li>for example &#x2F; for instance &#x2F; such as</li>
+</ul>
+</li>
+</ul>
+  <aside>
+  💡 whereas, because, nevertheless, therefore, however, also, in contrast, as a consequence, since, as a result, due to (noun), because of (noun)
+  
+  </aside>
+  
+  <aside>
+  💡 fortunately, importantly, inevitably, interestingly, obviously, surprisingly, unfortunately, somewhat
+  
+  </aside>
+  </li>
+<li><p>write the conclusion</p>
+<ul>
+<li>in short, in summary, i would urge sb to do sth.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="common-expressions"><a href="#common-expressions" class="headerlink" title="common expressions"></a>common expressions</h2><table>
+<thead>
+<tr>
+<th>advantage</th>
+<th>benefit</th>
+<th>positive consequence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>disadvantage</td>
+<td>drawback</td>
+<td>negative consequence</td>
+</tr>
+<tr>
+<td>opinion</td>
+<td>view</td>
+<td>point of view</td>
+</tr>
+<tr>
+<td>however</td>
+<td>nevertheless</td>
+<td></td>
+</tr>
+<tr>
+<td>people</td>
+<td>individuals</td>
+<td></td>
+</tr>
+<tr>
+<td>problem</td>
+<td>dilemma</td>
+<td>difficulty</td>
+</tr>
+<tr>
+<td>solution</td>
+<td>approach</td>
+<td>strategy</td>
+</tr>
+<tr>
+<td>important</td>
+<td>significant</td>
+<td>noteworthy</td>
+</tr>
+<tr>
+<td>issue</td>
+<td>topic</td>
+<td>concern</td>
+</tr>
+<tr>
+<td>situation</td>
+<td>circumstance</td>
+<td>context        phenomenon</td>
+</tr>
+</tbody></table>
 ]]></content>
       <categories>
         <category>note</category>
+        <category>english</category>
       </categories>
   </entry>
 </search>
