@@ -25,25 +25,29 @@
 <script src="/js/jquery.min.js"></script>
 <script src="/js/typed.js"></script>
 <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
-    <meta name="description" content="明日は明日の風が吹く">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yuki&#39;s cabin">
-<meta property="og:url" content="https://yukiiiiiirin.github.io/note/index.html">
+    <meta name="description" content="要使用ProteinMPNN的本地版本，必须从GitHub下载源代码。该代码依赖于多个Python包，因此运行它的最便捷方式之一是通过创建一个包含必要包的conda环境。安装ProteinMPNN和执行本教程所需的包可以通过运行以下命令来完成。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="how to use proteinMPNN">
+<meta property="og:url" content="https://yukiiiiiirin.github.io/posts/3150d441/index.html">
 <meta property="og:site_name" content="yuki&#39;s cabin">
-<meta property="og:description" content="明日は明日の風が吹く">
+<meta property="og:description" content="要使用ProteinMPNN的本地版本，必须从GitHub下载源代码。该代码依赖于多个Python包，因此运行它的最便捷方式之一是通过创建一个包含必要包的conda环境。安装ProteinMPNN和执行本教程所需的包可以通过运行以下命令来完成。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-10-23T13:17:47.000Z">
+<meta property="article:modified_time" content="2024-10-23T13:19:31.912Z">
 <meta property="article:author" content="ゆき">
+<meta property="article:tag" content="biology">
+<meta property="article:tag" content="bioinformatics">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://yukiiiiiirin.github.io/note/">
+<link rel="canonical" href="https://yukiiiiiirin.github.io/posts/3150d441/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":"","permalink":"","path":"note/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://yukiiiiiirin.github.io/posts/3150d441/","path":"posts/3150d441/","title":"how to use proteinMPNN"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>yuki's cabin</title>
+<title>how to use proteinMPNN | yuki's cabin</title>
   
 
 
@@ -196,16 +200,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="https://yukiiiiiirin.github.io/posts/3150d441/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -219,13 +224,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | yuki's cabin">
+      <meta itemprop="name" content="how to use proteinMPNN | yuki's cabin">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/posts/3150d441/" class="post-title-link" itemprop="url">how to use proteinMPNN</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          how to use proteinMPNN
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -257,17 +262,48 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <p>要使用ProteinMPNN的本地版本，必须从GitHub下载源代码。该代码依赖于多个Python包，因此运行它的最便捷方式之一是通过创建一个包含必要包的conda环境。安装ProteinMPNN和执行本教程所需的包可以通过运行以下命令来完成。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/3150d441/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+    <div class="post-body" itemprop="articleBody"><p>要使用ProteinMPNN的本地版本，必须从GitHub下载源代码。该代码依赖于多个Python包，因此运行它的最便捷方式之一是通过创建一个包含必要包的conda环境。安装ProteinMPNN和执行本教程所需的包可以通过运行以下命令来完成。</p>
+  <span id="more"></span>
+
+<p>这些命令来源于meiler老师的教程，仅供参考[1] 。</p>
+<p>conda create –name ProteinMPNN_tutorial<br>conda activate ProteinMPNN_tutorial<br>conda install pytorch torchvision torchaudio cudatoolkit&#x3D;11.3 -c pytorch<br>pip3 install -r requirements.txt<br>如果出现：ERROR: Could not open requirements file: [Errno 2] No such file or directory: ‘requirements.txt’ 需要先创建该文件，才能进行安装，步骤如下：<br>1）打开cmd，进入到项目文件夹下<br>2）执行语句：pip freeze &gt; requirements.txt<br>3）之后执行：pip install requirements.txt<br>4）配置完成，打开requirements.txt文件，可以看到一些配置信息。</p>
+<ol>
+<li>基本用法</li>
+</ol>
+<p>1.1 激活包含运行ProteinMPNN所需包的conda环境。</p>
+<p>conda activate ProteinMPNN_tutorial<br>1.2 运行以下命令显示主ProteinMPNN应用程序的帮助信息。</p>
+<p>cd ProteinMPNN #cd到下载了code的文件夹<br>python protein_mpnn_run.py -h<br>该命令将显示脚本使用说明和可用的输入参数。该脚本是初始化和运行模型的唯一脚本。其他可用的函数用于准备输入数据和创建选项文件。</p>
+<p>1.3 首先，在没有附加选项的情况下对1QYS的整个序列进行简单的重新设计。切换到教程目录并创建一个新目录以重新设计1QYS序列。</p>
+<p>参数含义<br>–pdb_path 输入pdb文件的全路径；<br>–pdb_path_chains 需要设计pdb文件中的哪一条链；<br>–out_folder 文件输出路径；<br>–num_seq_per_target 设计的蛋白序列输出条数；<br>–sampling_temp 采样温度，建议可取值0.1， 0.15， 0.2， 0.25， 0.3；<br>–seed 设置随机数</p>
+<p>cd ProteinMPNN_tutorial #cd到教程目录<br>mkdir 1qys_designs #创建新目录<br>python protein_mpnn_run.py –pdb_path input&#x2F;1qys&#x2F;1qys.pdb <br>–out_folder .&#x2F;1qys_designs&#x2F; –num_seq_per_target 10 –sampling_temp “0.1” <br>–seed 0 –batch_size 1 –model_name v_48_020<br>序列生成应该只需几秒钟。生成的输出序列可以在.&#x2F;1qys_designs&#x2F;seqs中找到。</p>
+<p>可能会出现ModuleNotFoundError: No module named ‘numpy‘<br>start+R打开命令行，在里面输入以下命令下载numpy库：</p>
+<p>pip install -i <a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a> numpy<br>中间加了一个镜像，这样下载更快，numpy这个库下得比较慢容易超时，用镜像下更方便一点，也可以用以下的普通下载：</p>
+<p>pip install numpy<br>下载完之后，用pip list查看是否下载成功，出现numpy就是成功了。</p>
+<p>1.4 查看生成的序列文件。</p>
+<p>gedit .&#x2F;1qys_designs&#x2F;seqs&#x2F;1qys.fa<br>1qys.fa包含原始序列以及fasta格式中的所有设计。每个序列都附带一个分数和一个序列恢复值。在这种情况下，分数和全局分数应该是相同的。全局分数对序列中的所有残基进行平均，而分数仅代表设计残基的平均值。序列恢复显示设计残基的百分比身份。</p>
+<ol start="2">
+<li>残基偏向</li>
+</ol>
+<p>通过在本地安装ProteinMPNN，我们可以利用GitHub存储库中发布的一些应用程序之一。在ProteinMPNN&#x2F;helper_scripts&#x2F;中可以找到用于生成输入文件以使用ProteinMPNN的一些专用选项的脚本（残基偏差，省略氨基酸，固定位置）。其中一个应用是引入残基偏向，例如使疏水残基更有可能而半胱氨酸更不可能。</p>
+<p>2.1 使用以下命令使用残基偏向重新设计1qys序列。</p>
+<p>mkdir 1qys_designs_biased<br>python ~&#x2F;ProteinMPNN&#x2F;helper_scripts&#x2F;make_bias_AA.py –output_path 1qys_bias.jsonl <br>–AA_list “A F G I L M P V W Y C” <br>–bias_list “1.39 1.39 1.39 1.39 1.39 1.39 1.39 1.39 1.39 1.39 -1.1”<br>python ~&#x2F;ProteinMPNN&#x2F;protein_mpnn_run.py –pdb_path input&#x2F;1qys&#x2F;1qys.pdb <br>–out_folder .&#x2F;1qys_designs_biased&#x2F; –num_seq_per_target 10 –sampling_temp “0.1” <br>–seed 0 –batch_size 1 –model_name v_48_020 <br>–bias_AA_jsonl 1qys_bias.jsonl<br>2.2 通过为两种设计创建序列标志，我们可以可视化氨基酸偏差是否对设计序列产生了影响。</p>
+<p>python scripts&#x2F;create_logo.py –fasta 1qys_designs&#x2F;seqs&#x2F;1qys.fa –output 1qys_unbiased_logo.png<br>python scripts&#x2F;create_logo.py –fasta 1qys_designs_biased&#x2F;seqs&#x2F;1qys.fa –output 1qys_biased_logo.png<br>查看两个创建的序列标志。您将看到偏向某些残基会带来风险，而且偏向的类型和强度应该经过深思熟虑。</p>
+<ol start="3">
+<li>固定位置</li>
+</ol>
+<p>想要重新设计SARS-CoV-2刺突蛋白受体结合结构域和迷你蛋白抑制剂LCB3之间的界面。该复合物的结构在7JZM下被结晶并发表，可以在inputs&#x2F;7JZM&#x2F;7jzm.pdb中找到。</p>
+<p>3.1 只设计LCB3（链A）的残基。为此，首先为包含要重新设计位置的链分配链。</p>
+<p>python ~&#x2F;ProteinMPNN&#x2F;helper_scripts&#x2F;parse_multiple_chains.py –input_path input&#x2F;7jzm&#x2F; <br>–output_path 7jzm.jsonl<br>python ~&#x2F;ProteinMPNN&#x2F;helper_scripts&#x2F;assign_fixed_chains.py –input_path 7jzm.jsonl <br>–output_path 7jzm_assigned.jsonl –chain_list “A”<br>parse_multiple_chains.py以目录为输入变量，还可用于一次解析和随后设计目录中多个pdb文件。</p>
+<p>3.2 粗略假设LCB3的界面残基包括与刺突蛋白的距离为5埃的所有残基。使用pymol检查蛋白质结构并选择要进行设计的残基是一种方式。在这种情况下，在pymol中加载结构：</p>
+<p>pymol input&#x2F;7jzm&#x2F;7jzm.pdb<br>选择并输出LCB3界面的残基。我们在pymol命令行中输入以下内容：</p>
+<p>select interface, br. chain A within 5 of chain B<br>reslist &#x3D;[]<br>iterate interface and name CA, reslist.append((resi))<br>print(*reslist)<br>3.3 您现在有一个位置列表，可以将其设置为可设计。ProteinMPNN只能接受应该固定的位置字典。使用以下python脚本创建包含固定位置的jsonl文件，以字典格式。</p>
+<p>python ~&#x2F;ProteinMPNN&#x2F;helper_scripts&#x2F;make_fixed_positions_dict.py –specify_non_fixed <br>–position_list “1 3 4 6 7 8 10 11 13 14 17 18 30 31 33 34 37 40” –chain_list “A” <br>–input_path input&#x2F;7jzm.jsonl –output_path 7jzm_fixed_pos.jsonl<br>3.4 现在我们可以使用选定的残基运行ProteinMPNN。此外，这次我们想输出每个残基的得分，以了解哪些点突变对序列得分贡献最大。</p>
+<p>mkdir 7jzm_designs<br>python ~&#x2F;ProteinMPNN&#x2F;protein_mpnn_run.py –jsonl_path 7jzm.jsonl <br>–chain_id_jsonl 7jzm_assigned.jsonl –fixed_positions_jsonl 7jzm_fixed_pos.jsonl <br>–out_folder 7jzm_designs –num_seq_per_target 10 –sampling_temp “0.1” <br>–seed 0 –batch_size 1 –save_score 1 –save_probs 1<br>在目录7jzm_design中将创建三个输出目录。在7jzm_designs&#x2F;seqs&#x2F;中，我们将再次找到以fasta格式保存的设计序列。</p>
+<p>gedit 7jzm_designs&#x2F;seqs&#x2F;7jzm.fasta<br>现在，序列分数和全局分数应该有所不同，因为这次我们只设计了蛋白质的一部分。</p>
+<p>3.5 在Jupyter notebook会话中，我们可以交互地绘制氨基酸概率。JupyterLab是一种用于编码的交互式界面，允许我们轻松更改和运行代码。可以通过运行以下命令启动notebook。</p>
+<p>jupyter lab scripts&#x2F;plot_probs.ipynb<br>通过单击相应字段中的播放&#x2F;运行按钮或按Ctrl+Enter键执行两个脚本块。第一个块绘制了复合物所有残基的输出氨基酸概率。在第二个块中，我们指定了重新设计的位置。现在，我们可以调查我们感兴趣的每个位置的单个分数。</p>
+<p>根据个人的先验知识，可以在Python notebook中完全运行ProteinMPNN并绘制结果。代码示例可在ProteinMPNN&#x2F;colab_notebooks&#x2F;中找到，并根据需要进行定制。</p>
+
     </div>
 
     
@@ -275,121 +311,43 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://yukiiiiiirin.github.io/posts/64daf1d1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/yukiiiiiirin/images@main/img/vscodeavatartion.png">
-      <meta itemprop="name" content="ゆき">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="yuki's cabin">
-      <meta itemprop="description" content="明日は明日の風が吹く">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | yuki's cabin">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/posts/64daf1d1/" class="post-title-link" itemprop="url">iels writing</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2024-10-22 19:05:11" itemprop="dateCreated datePublished" datetime="2024-10-22T19:05:11+08:00">2024-10-22</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-10-23 10:46:17" itemprop="dateModified" datetime="2024-10-23T10:46:17+08:00">2024-10-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/note/english/" itemprop="url" rel="index"><span itemprop="name">english</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="writing"><a href="#writing" class="headerlink" title="writing"></a>writing</h1><h2 id="Task-1"><a href="#Task-1" class="headerlink" title="Task 1"></a>Task 1</h2><p>an introduction and two body paragraphs</p>
-<aside>
-💡 past tense
-
-</aside>
-
+<div class="post-copyright">
 <ul>
-<li><p>analyze the data and determine how to split the date into two(or three) logical parts.</p>
-</li>
-<li><p>writing the introduction, usually one sentence or two.</p>
-<ul>
-<li>the chart(graph, diagram, table) demonstrates that</li>
-<li>the first [   ] shows…..while the second shows……</li>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>ゆき
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://yukiiiiiirin.github.io/posts/3150d441/" title="how to use proteinMPNN">https://yukiiiiiirin.github.io/posts/3150d441/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
 </ul>
-<p>  describe the form of the data, the title and the axis </p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/64daf1d1/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/biology/" rel="tag"><i class="fa fa-tag"></i> biology</a>
+              <a href="/tags/bioinformatics/" rel="tag"><i class="fa fa-tag"></i> bioinformatics</a>
+          </div>
+
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/64daf1d1/" rel="prev" title="iels writing">
+                  <i class="fa fa-angle-left"></i> iels writing
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
+
 
 
 
