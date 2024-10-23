@@ -1391,7 +1391,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #3228bb;
+  background: #69b8d4;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2942,4 +2942,14 @@ header.header {
   transition: all 0.2s ease-out;
   width: $sidebar-desktop;
   z-index: 20;
+}
+.span-with-margin {
+  display: inline-block; /* 将span转换为行内块元素 */
+  margin-bottom: 10px; /* 设置垂直间距 */
+  color: inherit; /* 继承父元素的color属性（可选） */
+  font-size: 20px; /* 设置字体大小 */
+}
+/* 最后一个span不需要下外边距 */
+.span-with-margin:last-child {
+  margin-bottom: 0;
 }
