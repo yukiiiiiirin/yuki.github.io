@@ -1390,7 +1390,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #2554ff;
+  background: #8bffff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2936,4 +2936,24 @@ background
 /* 最后一个span不需要下外边距 */
 .span-with-margin:last-child {
   margin-bottom: 0;
+}
+.hider_title {
+  cursor: pointer;
+  background: #eee;
+}
+.close:before {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  content: "▼";
+}
+.open:before {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  content: "▲";
+}
++ p code,
+.hider_title code {
+  color: #c71585;
+  background: #fffafa;
+  margin: 2px;
 }

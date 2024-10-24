@@ -56,7 +56,8 @@
   <entry>
     <title>iels writing</title>
     <url>/posts/64daf1d1/</url>
-    <content><![CDATA[<h1 id="writing"><a href="#writing" class="headerlink" title="writing"></a>writing</h1><h2 id="Task-1"><a href="#Task-1" class="headerlink" title="Task 1"></a>Task 1</h2><p>an introduction and two body paragraphs</p>
+    <content><![CDATA[<h1 id="writing"><a href="#writing" class="headerlink" title="writing"></a>writing</h1><span id="more"></span>
+<h2 id="Task-1"><a href="#Task-1" class="headerlink" title="Task 1"></a>Task 1</h2><p>an introduction and two body paragraphs</p>
 <aside>
 💡 past tense
 
@@ -70,8 +71,8 @@
 <li>the chart(graph, diagram, table) demonstrates that</li>
 <li>the first [   ] shows…..while the second shows……</li>
 </ul>
-<p>  describe the form of the data, the title and the axis </p>
-  <span id="more"></span>
+<p>  describe the form of the data, the title and the axis 
+  </p>
 </li>
 <li><p>writing the body</p>
 <ul>
