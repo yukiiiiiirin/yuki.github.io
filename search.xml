@@ -28,6 +28,7 @@
     <url>/posts/5a8a6c8d/</url>
     <content><![CDATA[<p>Fancybox的自定义选项包括：</p>
 <p>type：设置弹出框的类型，可以是’image’、‘iframe’、’ajax’等<br>    image：用于展示图片（默认类型）。<br>    iframe：用于加载嵌入式网页，例如外部链接。<br>    ajax：用于加载动态内容，比如通过 Ajax 请求从服务器获取的 HTML 内容。<br>    html：用于直接显示 HTML 内容。<br>    inline：用于展示页面内隐藏的元素。<br>    video：用于加载视频内容，如 MP4 文件。</p>
+<span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    &lt;!-- 图片弹出 --&gt;</span><br><span class="line">&lt;a data-fancybox=&quot;gallery&quot; data-src=&quot;path/to/image.jpg&quot; data-type=&quot;image&quot;&gt;View Image&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Iframe 弹出，用于嵌入网页 --&gt;</span><br><span class="line">&lt;a data-fancybox data-src=&quot;https://example.com&quot; data-type=&quot;iframe&quot;&gt;View Website&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Ajax 弹出，用于加载服务器内容 --&gt;</span><br><span class="line">&lt;a data-fancybox data-src=&quot;/path/to/ajax-content&quot; data-type=&quot;ajax&quot;&gt;View Ajax Content&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- HTML 弹出，直接显示 HTML 代码 --&gt;</span><br><span class="line">&lt;a data-fancybox data-type=&quot;html&quot; data-src=&quot;#custom-html&quot;&gt;View Custom HTML&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Video 弹出，加载视频文件 --&gt;</span><br><span class="line">&lt;a data-fancybox data-src=&quot;path/to/video.mp4&quot; data-type=&quot;video&quot;&gt;Watch Video&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Inline 弹出，用于显示页面内的隐藏元素 --&gt;</span><br><span class="line">&lt;div style=&quot;display:none;&quot; id=&quot;hidden-content&quot;&gt;</span><br><span class="line">    &lt;h2&gt;Inline Content&lt;/h2&gt;</span><br><span class="line">    &lt;p&gt;This is hidden inline content.&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;a data-fancybox data-src=&quot;#hidden-content&quot; data-type=&quot;inline&quot;&gt;View Inline Content&lt;/a&gt;</span><br></pre></td></tr></table></figure>
 
 <p>autoSize：自动调整弹出框的大小以适应内容<br>maxWidth：设置最大宽度<br>maxHeight：设置最大高度<br>padding：设置弹出框的内边距<br>margin：设置弹出框的外边距<br>closeBtn：是否显示关闭按钮<br>arrows：是否显示左右箭头来切换图片<br>loop：是否循环浏览图片<br>autoFocus：是否自动聚焦弹出框<br>modal：是否显示模态框<br>tpl：自定义弹出框的HTML模板<br>beforeLoad：在加载内容之前执行的回调函数<br>afterLoad：在加载内容之后执行的回调函数<br>beforeClose：在关闭弹出框之前执行的回调函数<br>afterClose：在关闭弹出框之后执行的回调函数<br>helpers：用于配置Fancybox的插件，比如缩略图、按钮等<br>这些自定义选项可以通过在初始化Fancybox时传入一个包含这些选项的对象来设置。</p>
@@ -87,37 +88,6 @@
       <tags>
         <tag>biology</tag>
         <tag>bioinformatics</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>大肠杆菌菌种后面的DE3是什么？</title>
-    <url>/posts/34c9071a/</url>
-    <content><![CDATA[<p>像是Origami B (DE3)，Rosetta (DE3)，BL21 (DE3)屁股后面都跟着(DE3)。<br>以Rosetta为例，不难看出DE3只是一个基因符号而已。</p>
-<p>DE3系是指的经过基因工程改造已携带可编码该RNA聚合酶的基因，称之为DE3噬菌体λ溶原菌。</p>
-<span id="more"></span>
-<p>实际上想要使用T7启动子的表达质粒，首先需要大肠杆菌本身具有T7RNA聚合酶。</p>
-<p>该聚合酶并不是细菌内源产生的，而是改造后的得到的。</p>
-<p>pET表达载体都具有强力的噬菌体T7启动子。使用IPTG诱导后，T7 RNA聚合酶会与T7启动子结合，使目的基因发生转录和翻译。</p>
-<p>因此有DE3&#x3D;可以用T7启动子的质粒，反之不行。</p>
-<p>之前遇到过某个同学拿着没有DE3的菌株来问我，为什么用了超级好用pET表达载体诱导表达没有结果。甚至也被问过，为什么Top10不能用来表达。所以虽然是一个很小很小的点，但是在某些实验室师兄师姐等于失联，而导师又突然让你换菌种进行表达的时候一定要注意菌株本身的基因型。</p>
-<p>实际上诱导也是一个很有意思的事情，在高OD值进行诱导，反而会因为细胞密度过高会使细胞立即停止生长，获得很低的表达。</p>
-<p>穿梭质粒是指一类具有两种不同复制起点和选择标记，因而可以在两种不同类群宿主中存活和复制的质粒载体。</p>
-<p>如用于枯草的pBE2、酵母的pPIC9K、哺乳动物表达载体pMT2 和用于植物细胞的Ti 质粒。</p>
-<p>有些朋友呢也会在某些时候拿着穿梭质粒的质粒想往大肠里面转，让他在大肠里面表达，那当然是不行的。</p>
-<p>穿梭载体可以在两种宿主生物体内复制的载体分子，主要起到运载目的基因穿梭往返两种生物之间的目的。</p>
-<p>穿梭质粒中含原核和真核生物2个复制子，以确保两类细胞中都能扩增。但并不意味着在这两类细胞中都能进行表达。（*有些改造后&#x2F;特殊的可以，多看说明书。）</p>
-<p>穿梭质粒进入大肠杆菌后，在转录这一步还是可以正常进行的，所以进行相关实验是可以检测到数据的，但到了翻译这一步，就进行不下去了，因为没有可起始翻译的核糖体结合位点或Shine Dalgarno序列。那蛋白是没有办法产生的。</p>
-<div class="note "><p>Shine-Dalgarno （SD）是细菌和古细菌中信使RNA中核糖体结合位点序列。 通常位于翻译起始密码子 AUG上游约8~10个碱基位置。SD序列帮助招募核糖体RNA ，并将核糖体比对并结合到信使RNA（mRNA）的起始密码子，从而开始蛋白质合成。大肠杆菌的SD序列为AGGAGGU。SD序列与起始密码子之间的精确距离保证了mRNA在核糖体上定位后，翻译起始密码子AUG正好处于核糖体中的P位，这是翻译启动的前提条件。在很多情况下，SD序列位于AUG之前大约7个碱基处，在此间隔中少一个或多一个碱基，均会导致翻译起始效率不同程度的降低。</p>
-<p>SD序列与起始密码子之间的精确距离保证了mRNA在核糖体上定位后，翻译起始密码子AUG正好处于核糖体中的P位，这是翻译启动的前提条件。</p>
-</div>
-<p>一定要明确，转录和翻译是两件事。能复制，有多拷贝，和最终分泌蛋白是两件事。</p>
-<p>说起来这些知识都不过是一些很零碎很基础的事情，但是也是遇到过有些朋友卡在这个上面。所以便写了出来，希望能帮到一些朋友。</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>biology</tag>
       </tags>
   </entry>
   <entry>
@@ -521,5 +491,36 @@
       <categories>
         <category>english</category>
       </categories>
+  </entry>
+  <entry>
+    <title>大肠杆菌菌种后面的DE3是什么？</title>
+    <url>/posts/34c9071a/</url>
+    <content><![CDATA[<p>像是Origami B (DE3)，Rosetta (DE3)，BL21 (DE3)屁股后面都跟着(DE3)。<br>以Rosetta为例，不难看出DE3只是一个基因符号而已。</p>
+<p>DE3系是指的经过基因工程改造已携带可编码该RNA聚合酶的基因，称之为DE3噬菌体λ溶原菌。</p>
+<span id="more"></span>
+<p>实际上想要使用T7启动子的表达质粒，首先需要大肠杆菌本身具有T7RNA聚合酶。</p>
+<p>该聚合酶并不是细菌内源产生的，而是改造后的得到的。</p>
+<p>pET表达载体都具有强力的噬菌体T7启动子。使用IPTG诱导后，T7 RNA聚合酶会与T7启动子结合，使目的基因发生转录和翻译。</p>
+<p>因此有DE3&#x3D;可以用T7启动子的质粒，反之不行。</p>
+<p>之前遇到过某个同学拿着没有DE3的菌株来问我，为什么用了超级好用pET表达载体诱导表达没有结果。甚至也被问过，为什么Top10不能用来表达。所以虽然是一个很小很小的点，但是在某些实验室师兄师姐等于失联，而导师又突然让你换菌种进行表达的时候一定要注意菌株本身的基因型。</p>
+<p>实际上诱导也是一个很有意思的事情，在高OD值进行诱导，反而会因为细胞密度过高会使细胞立即停止生长，获得很低的表达。</p>
+<p>穿梭质粒是指一类具有两种不同复制起点和选择标记，因而可以在两种不同类群宿主中存活和复制的质粒载体。</p>
+<p>如用于枯草的pBE2、酵母的pPIC9K、哺乳动物表达载体pMT2 和用于植物细胞的Ti 质粒。</p>
+<p>有些朋友呢也会在某些时候拿着穿梭质粒的质粒想往大肠里面转，让他在大肠里面表达，那当然是不行的。</p>
+<p>穿梭载体可以在两种宿主生物体内复制的载体分子，主要起到运载目的基因穿梭往返两种生物之间的目的。</p>
+<p>穿梭质粒中含原核和真核生物2个复制子，以确保两类细胞中都能扩增。但并不意味着在这两类细胞中都能进行表达。（*有些改造后&#x2F;特殊的可以，多看说明书。）</p>
+<p>穿梭质粒进入大肠杆菌后，在转录这一步还是可以正常进行的，所以进行相关实验是可以检测到数据的，但到了翻译这一步，就进行不下去了，因为没有可起始翻译的核糖体结合位点或Shine Dalgarno序列。那蛋白是没有办法产生的。</p>
+<div class="note "><p>Shine-Dalgarno （SD）是细菌和古细菌中信使RNA中核糖体结合位点序列。 通常位于翻译起始密码子 AUG上游约8~10个碱基位置。SD序列帮助招募核糖体RNA ，并将核糖体比对并结合到信使RNA（mRNA）的起始密码子，从而开始蛋白质合成。大肠杆菌的SD序列为AGGAGGU。SD序列与起始密码子之间的精确距离保证了mRNA在核糖体上定位后，翻译起始密码子AUG正好处于核糖体中的P位，这是翻译启动的前提条件。在很多情况下，SD序列位于AUG之前大约7个碱基处，在此间隔中少一个或多一个碱基，均会导致翻译起始效率不同程度的降低。</p>
+<p>SD序列与起始密码子之间的精确距离保证了mRNA在核糖体上定位后，翻译起始密码子AUG正好处于核糖体中的P位，这是翻译启动的前提条件。</p>
+</div>
+<p>一定要明确，转录和翻译是两件事。能复制，有多拷贝，和最终分泌蛋白是两件事。</p>
+<p>说起来这些知识都不过是一些很零碎很基础的事情，但是也是遇到过有些朋友卡在这个上面。所以便写了出来，希望能帮到一些朋友。</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>biology</tag>
+      </tags>
   </entry>
 </search>

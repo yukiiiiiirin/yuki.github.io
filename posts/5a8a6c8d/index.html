@@ -34,7 +34,7 @@
 <meta property="og:description" content="Fancybox的自定义选项包括： type：设置弹出框的类型，可以是’image’、‘iframe’、’ajax’等    image：用于展示图片（默认类型）。    iframe：用于加载嵌入式网页，例如外部链接。    ajax：用于加载动态内容，比如通过 Ajax 请求从服务器获取的 HTML 内容。    html：用于直接显示 HTML 内容。    inline：用于展示页面内隐藏">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-10-26T03:33:45.000Z">
-<meta property="article:modified_time" content="2024-10-26T12:34:01.036Z">
+<meta property="article:modified_time" content="2024-10-26T14:08:50.651Z">
 <meta property="article:author" content="ゆき">
 <meta name="twitter:card" content="summary">
 
@@ -240,7 +240,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2024-10-26 11:33:45 / Modified: 20:34:01" itemprop="dateCreated datePublished" datetime="2024-10-26T11:33:45+08:00">2024-10-26</time>
+      <time title="Created: 2024-10-26 11:33:45 / Modified: 22:08:50" itemprop="dateCreated datePublished" datetime="2024-10-26T11:33:45+08:00">2024-10-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -263,6 +263,7 @@
     
     <div class="post-body" itemprop="articleBody"><p>Fancybox的自定义选项包括：</p>
 <p>type：设置弹出框的类型，可以是’image’、‘iframe’、’ajax’等<br>    image：用于展示图片（默认类型）。<br>    iframe：用于加载嵌入式网页，例如外部链接。<br>    ajax：用于加载动态内容，比如通过 Ajax 请求从服务器获取的 HTML 内容。<br>    html：用于直接显示 HTML 内容。<br>    inline：用于展示页面内隐藏的元素。<br>    video：用于加载视频内容，如 MP4 文件。</p>
+<span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">    &lt;!-- 图片弹出 --&gt;</span><br><span class="line">&lt;a data-fancybox=&quot;gallery&quot; data-src=&quot;path/to/image.jpg&quot; data-type=&quot;image&quot;&gt;View Image&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Iframe 弹出，用于嵌入网页 --&gt;</span><br><span class="line">&lt;a data-fancybox data-src=&quot;https://example.com&quot; data-type=&quot;iframe&quot;&gt;View Website&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Ajax 弹出，用于加载服务器内容 --&gt;</span><br><span class="line">&lt;a data-fancybox data-src=&quot;/path/to/ajax-content&quot; data-type=&quot;ajax&quot;&gt;View Ajax Content&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- HTML 弹出，直接显示 HTML 代码 --&gt;</span><br><span class="line">&lt;a data-fancybox data-type=&quot;html&quot; data-src=&quot;#custom-html&quot;&gt;View Custom HTML&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Video 弹出，加载视频文件 --&gt;</span><br><span class="line">&lt;a data-fancybox data-src=&quot;path/to/video.mp4&quot; data-type=&quot;video&quot;&gt;Watch Video&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Inline 弹出，用于显示页面内的隐藏元素 --&gt;</span><br><span class="line">&lt;div style=&quot;display:none;&quot; id=&quot;hidden-content&quot;&gt;</span><br><span class="line">    &lt;h2&gt;Inline Content&lt;/h2&gt;</span><br><span class="line">    &lt;p&gt;This is hidden inline content.&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;a data-fancybox data-src=&quot;#hidden-content&quot; data-type=&quot;inline&quot;&gt;View Inline Content&lt;/a&gt;</span><br></pre></td></tr></table></figure>
 
 <p>autoSize：自动调整弹出框的大小以适应内容<br>maxWidth：设置最大宽度<br>maxHeight：设置最大高度<br>padding：设置弹出框的内边距<br>margin：设置弹出框的外边距<br>closeBtn：是否显示关闭按钮<br>arrows：是否显示左右箭头来切换图片<br>loop：是否循环浏览图片<br>autoFocus：是否自动聚焦弹出框<br>modal：是否显示模态框<br>tpl：自定义弹出框的HTML模板<br>beforeLoad：在加载内容之前执行的回调函数<br>afterLoad：在加载内容之后执行的回调函数<br>beforeClose：在关闭弹出框之前执行的回调函数<br>afterClose：在关闭弹出框之后执行的回调函数<br>helpers：用于配置Fancybox的插件，比如缩略图、按钮等<br>这些自定义选项可以通过在初始化Fancybox时传入一个包含这些选项的对象来设置。</p>
