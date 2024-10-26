@@ -17,6 +17,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/null/pace-theme-minimal.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
@@ -32,8 +33,8 @@
 <meta property="og:site_name" content="yuki&#39;s cabin">
 <meta property="og:description" content="document.addEventListener(&#39;DOMContentLoaded&#39;, function () {         &#x2F;&#x2F; 使用 extreme-ip-lookup API 获取访客信息         fetch(&#39;https:&#x2F;&#x2F;extreme-ip-lookup.com&#x2F;json&#x2F;?key&#x3D;XjgLPkXquPylBNmdXteQ&#39;)">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-10-25T15:54:35.496Z">
-<meta property="article:modified_time" content="2024-10-25T15:54:35.496Z">
+<meta property="article:published_time" content="2024-10-26T01:46:49.589Z">
+<meta property="article:modified_time" content="2024-10-26T01:46:49.589Z">
 <meta property="article:author" content="ゆき">
 <meta name="twitter:card" content="summary">
 
@@ -94,7 +95,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-study"><a href="/study/" rel="section"><i class="fa fa-graduation-cap fa-fw"></i>study</a></li><li class="menu-item menu-item-interest"><a href="/interest/" rel="section"><i class="fa fa-heart fa-fw"></i>interest</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-education"><a href="/education/" rel="section"><i class="fa fa-graduation-cap fa-fw"></i>education</a></li><li class="menu-item menu-item-interest"><a href="/interest/" rel="section"><i class="fa fa-heart fa-fw"></i>interest</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -159,7 +160,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -233,7 +234,6 @@
             })
             .then(data => {
                 var ip_content = document.querySelector(".ip_content");
-                console.log(data); // 输出原始数据到控制台，便于调试
                 ip_content.innerHTML = 'Hi,<br> friends from <span class="p red">' + (data.country || 'earth') + "&#10024 </span>";
             })
             .catch(error => {
@@ -264,21 +264,7 @@
   });
 </script>
 
-<div class="typewriter-content2" style="color: #b9a78b; font-size: 20px;"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-<script>
-  $(document).ready(function () {
-    var typed = new Typed('.typewriter-content2', {
-      strings: ['Technology', 'Microbiology', 'Digital planner design','Single player RPGgame', 'Reading book'],
-      startDelay: 500,
-      backDelay: 10,           // No delay for backspacing
-      typeSpeed: 40,
-      backSpeed: 50, // 回退速度
-      loop: true, // 循环
-      cursorChar: '_' // 光标字符
-    });
-  });
-</script>
+
 
 
       </div>
@@ -326,14 +312,18 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
 <script src="/js/third-party/search/local-search.js"></script>
 
 
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"forest","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js","integrity":"sha256-YbM1pG3wWnzhyYN49g5fPnen+2CKEFaZfopkkwSpNtY="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
 
 
+  <script src="/js/third-party/fancybox.js"></script>
 
   <script src="/js/third-party/pace.js"></script>
 

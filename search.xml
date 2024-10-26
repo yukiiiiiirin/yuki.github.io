@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>post</title>
+    <url>/posts/5a8a6c8d/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+  </entry>
+  <entry>
     <title>how to use proteinMPNN</title>
     <url>/posts/3150d441/</url>
     <content><![CDATA[<p>要使用ProteinMPNN的本地版本，必须从GitHub下载源代码。该代码依赖于多个Python包，因此运行它的最便捷方式之一是通过创建一个包含必要包的conda环境。安装ProteinMPNN和执行本教程所需的包可以通过运行以下命令来完成。</p>

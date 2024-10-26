@@ -957,6 +957,10 @@ pre code {
     transform: translate(1pt, -2pt) rotate(-1deg);
   }
 }
+.mermaid {
+  margin-bottom: 20px;
+  text-align: center;
+}
 .post-body .note {
   border-radius: 3px;
   margin-bottom: 20px;
@@ -1432,7 +1436,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff7fcc;
+    background: #342eff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3021,6 +3025,14 @@ h1 {
   font-size: 1.2em;
   margin: 0.67em 0;
 }
+h2 {
+  font-size: 1.18em;
+  margin: 0.65em 0;
+}
+h3 {
+  font-size: 1.15em;
+  margin: 0.6em 0;
+}
 hr {
   border: 0;
   height: 1px;
@@ -3028,4 +3040,18 @@ hr {
   border-top: 1px solid #999;
   border-radius: 5px; /* 圆角效果 */
   margin: 0px 0;
+}
+.markdown-section img {
+  max-width: 50%;
+  padding: 0.5em 0;
+  margin: auto;
+  display: block;
+}
+.caption {
+  color: #444;
+  display: block;
+  font-size: 0.9em;
+  margin-top: 0.1em;
+  position: relative;
+  text-align: center;
 }
