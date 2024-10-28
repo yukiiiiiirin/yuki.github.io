@@ -33,10 +33,13 @@
 <meta property="og:site_name" content="yuki&#39;s cabin">
 <meta property="og:description" content="about me    i am yuki.Master of Science in Microbiology, R&amp;D Engineer   yeast metabolic engineering biotechnology applications enzyme  This blog serves as my life record blog, covering various asp">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://wx.qlogo.cn/mmopen/Q3auHgzwzM7Zpduufb3elLEBf6DDWDCj4br8p126KNEuKYsjj8BEVujM95iaJJVAW004TUuO4QPkNfgDywTUHCILLMR19ddglB2GsZxtzYvs/64.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yukiiiiiirin/images@main/img/vscodehttpsb0.bdstatic.com483d75f7b3cbccb6820c0b4267bb4229.jpg.png">
 <meta property="article:published_time" content="2024-10-21T10:40:22.000Z">
-<meta property="article:modified_time" content="2024-10-26T14:42:27.262Z">
+<meta property="article:modified_time" content="2024-10-28T07:49:27.298Z">
 <meta property="article:author" content="ゆき">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wx.qlogo.cn/mmopen/Q3auHgzwzM7Zpduufb3elLEBf6DDWDCj4br8p126KNEuKYsjj8BEVujM95iaJJVAW004TUuO4QPkNfgDywTUHCILLMR19ddglB2GsZxtzYvs/64.jpg">
 
 
 <link rel="canonical" href="https://yukiiiiiirin.github.io/about/">
@@ -233,22 +236,189 @@
 </ul>
 <p>This blog serves as my life record blog, covering various aspects of life.</p>
 <p>「<a href="../note/">Notes</a>」 Some are original, some are translations, and some are based on or summarized from other people’s works<br>「<a href="../research/">Research</a>」 record most my previous research experiences.<br>「<a href="../interest/">Interest</a>」I enjoy making digital planners and working on game localization. On this page, I document my past work and its timeline.</p>
-<div class="typewriter-content2" style="color: #b9a78b; font-size: 20px;"></div>
+<p>Currently, I share my notes on my personal WeChat channel and have successfully garnered 3.7k fans. Additionally, I also share my personal design digital notebook and planner on Bilibili, where I have accumulated 1k fans.</p>
+<div class="container">
+  <!-- 卡片 1 -->
+  <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwNDQwMDQwNA==&action=getalbum&album_id=2639671370326556673&scene=173&subscene=&sessionid=svr_a6eb48a0d3d&enterid=1730088826&from_msgid=2247484809&from_itemidx=1&count=3&nolastread=1#wechat_redirect" class="card-link" style="--bg-image: url('https://wx.qlogo.cn/mmopen/Q3auHgzwzM7Zpduufb3elLEBf6DDWDCj4br8p126KNEuKYsjj8BEVujM95iaJJVAW004TUuO4QPkNfgDywTUHCILLMR19ddglB2GsZxtzYvs/64.jpg');">
+    <img src="https://wx.qlogo.cn/mmopen/Q3auHgzwzM7Zpduufb3elLEBf6DDWDCj4br8p126KNEuKYsjj8BEVujM95iaJJVAW004TUuO4QPkNfgDywTUHCILLMR19ddglB2GsZxtzYvs/64.jpg" alt="Icon 1" class="card-icon">
+    <div class="card-title">WeChat channel</div>
+    <div class="card-description">小林的实验方法记录本</div>
+  </a>
+  
+  <!-- 卡片 2 -->
+  <a target="_blank" rel="noopener" href="https://space.bilibili.com/3493084205680703" class="card-link" style="--bg-image: url('https://cdn.jsdelivr.net/gh/yukiiiiiirin/images@main/img/vscodehttpsb0.bdstatic.com483d75f7b3cbccb6820c0b4267bb4229.jpg.png');">
+    <img src="https://cdn.jsdelivr.net/gh/yukiiiiiirin/images@main/img/vscodehttpsb0.bdstatic.com483d75f7b3cbccb6820c0b4267bb4229.jpg.png" alt="Icon 2" class="card-icon">
+    <div class="card-title">Bilibili</div>
+    <div class="card-description">digital notebook and planner</div>
+  </a>
+</div>
+
+<style>
+  /* 定义容器样式 */
+  .container {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center; /* 水平居中 */
+  }
+
+  /* 定义卡片链接样式 */
+  .card-link {
+    display: grid;
+    grid-template-areas: 
+      "b a"
+      "b c";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    width: 35%;
+    height: auto;
+    padding: 0.1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    
+  }
+
+  /* 背景毛玻璃效果 */
+.card-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* 毛玻璃效果 */
+  z-index: -1;
+  opacity: 0.7; /* 透明度 */
+}
+
+  /* 图标样式 */
+  .card-icon {
+    grid-area: b;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-self: center;
+    margin-top: 15%;
+    z-index: 1
+  }
+
+  /* 标题样式 */
+  .card-title {
+    grid-area: a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-self: center;
+    z-index: 1
+  }
+
+  /* 描述样式 */
+  .card-description {
+    grid-area: c;
+    font-size: 0.9rem;
+    align-self: center;
+    z-index: 1
+  }
+
+  /* 鼠标悬停效果 */
+  .card-link:hover {
+    transform: scale(1.02);
+  }
+</style>
+
+
+<br>
+
+<!-- Mac代码窗口样式的容器 -->
+<div class="mac-window">
+  <div class="window-header">
+    <span class="red-dot"></span>
+    <span class="yellow-dot"></span>
+    <span class="green-dot"></span>
+  </div>
+  <div class="window-content">
+    <div class="typewriter-content2" style="color: #b9a78b; font-size: 20px;"></div>
+  </div>
+</div>
+
+<!-- 引入Typed.js库 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
 <script>
-  $(document).ready(function () {
+  document.addEventListener("DOMContentLoaded", function () {
     var typed = new Typed('.typewriter-content2', {
-      strings: ['Technology', 'Microbiology', 'Digital planner design','Single player RPGgame', 'Reading book'],
+      strings: ['Technology', 'Microbiology', 'Digital planner design', 'Single player RPG game', 'Reading book'],
       startDelay: 500,
-      backDelay: 10,           // No delay for backspacing
+      backDelay: 10,
       typeSpeed: 40,
-      backSpeed: 50, // 回退速度
-      loop: true, // 循环
-      cursorChar: '_' // 光标字符
+      backSpeed: 50,
+      loop: true,
+      cursorChar: '_'
     });
   });
 </script>
+
+<style>
+  /* Mac代码窗口样式 */
+  .mac-window {
+    width: 100%;
+    height: 100px; /* 固定高度 */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    font-family: monospace;
+    color: #b9a78b;
+  }
+
+  /* 窗口头部样式 */
+  .window-header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #333;
+  }
+
+  /* Mac窗口按钮样式 */
+  .window-header span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  .red-dot {
+    background-color: #ff5f57;
+  }
+
+  .yellow-dot {
+    background-color: #ffbd2e;
+  }
+
+  .green-dot {
+    background-color: #28c840;
+  }
+
+  /* 窗口内容区样式 */
+  .window-content {
+    padding: 1rem;
+    color: #b9a78b;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+</style>
+
       </div>
       
       
